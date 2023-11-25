@@ -6,5 +6,5 @@ def task() -> float:
         data = json.load(f)
         list_values =[item["score"] * item["weight"] for item in data]
         return round(sum(list_values), 3)
-
+        
 print(task())
